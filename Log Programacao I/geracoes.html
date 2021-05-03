@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+   function pulaLinha(){
+
+       document.write("<br><br>");
+
+   } 
+
+   function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+   }
+
+   var idadeQuandoTemFilhos = 28;
+   var anoAtual = 2021;
+   var anoDescobrimento = 1500;
+   var geracoes = (anoAtual - anoDescobrimento)/idadeQuandoTemFilhos;
+
+ mostra("Desde 1500 até agora, se passaram " + Math.round(geracoes) + " gerações");
+</script>

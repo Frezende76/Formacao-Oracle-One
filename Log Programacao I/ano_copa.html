@@ -1,0 +1,40 @@
+<meta charset= "UTF-8>">
+
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    var anoCopa = parseInt(prompt("Digite o ano da primeira Copa do Mundo"));
+    
+    var anoAtual = parseInt(prompt("Digite o ano em que estamos"));
+
+    while(anoCopa <= anoAtual){
+
+        mostra("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+        if (anoCopa == 1942){
+            mostra("Em " + anoCopa + " não houve Copa do Mundo.");
+            anoCopa = anoCopa + 4;
+          if (anoCopa == 1946){
+            mostra("Em " + anoCopa + " não houve Copa do Mundo.");
+            anoCopa = anoCopa + 4;
+          }  
+       }
+    }
+
+
+    mostra("FIM");
+
+</script>
